@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">大飞秘籍</string>
+    <string name="foo_text1">从首页跳转过来了</string>
 </resources>

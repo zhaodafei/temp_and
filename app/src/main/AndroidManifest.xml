@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 我的第二个页面-->
+        <activity android:name=".FooActivity" />
+
     </application>
 
 </manifest>
