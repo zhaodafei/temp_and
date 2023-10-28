@@ -65,5 +65,16 @@ public class FooActivity extends AppCompatActivity {
         params.width = 100;
         // params.width = UnitUtils.dip2px(this,300);
         fooText02.setLayoutParams(params); // 设置布局参数
+
+        // 05)去第demo1页面
+        Button FooButton3 = findViewById(R.id.foo_button3);
+        FooButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(FooActivity.this, Fei01Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

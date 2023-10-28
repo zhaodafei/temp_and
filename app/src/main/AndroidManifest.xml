@@ -29,6 +29,9 @@
         <!-- 我的第三个页面-->
         <activity android:name=".BarActivity" />
 
+        <!-- 我的第四个页面-->
+        <activity android:name=".Fei01Activity" />
+
     </application>
 
 </manifest>
