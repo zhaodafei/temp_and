@@ -25,6 +25,9 @@
         <!-- 我的第二个页面-->
         <activity android:name=".FooActivity" />
 
+        <!-- 我的第三个页面-->
+        <activity android:name=".BarActivity" />
+
     </application>
 
 </manifest>

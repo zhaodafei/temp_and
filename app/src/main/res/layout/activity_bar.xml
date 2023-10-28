@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 01)回字行布局 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#c0c0c0"
+    android:orientation="vertical">
+
+    &lt;!&ndash; 中间层的布局背景为浅绿&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="#90ee90"
+        android:padding="60dp">
+
+        &lt;!&ndash; 最内层的布局为野生西瓜色&ndash;&gt;
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff6b81"/>
+
+    </LinearLayout>
+
+</LinearLayout>-->
+
+<!-- 02)左右回字型布局 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#c0c0c0"
+    android:orientation="horizontal">
+
+    &lt;!&ndash; 左侧视图,它在上级视图中朝下对齐,它的下级视图靠左对齐&ndash;&gt;
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#90ee90"
+        android:gravity="left"
+        android:padding="10dp">
+
+        &lt;!&ndash; 最内层的布局为野生西瓜色&ndash;&gt;
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff6b81"/>
+
+    </LinearLayout>
+
+    &lt;!&ndash; 右侧视图,它在上级视图中朝上对齐,它的下级视图靠右对齐 &ndash;&gt;
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#90ee90"
+        android:gravity="right"
+        android:padding="10dp">
+
+        &lt;!&ndash; 最内层的布局为野生西瓜色&ndash;&gt;
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff6b81"/>
+
+    </LinearLayout>
+
+</LinearLayout>-->
+
+<!-- 03) LinearLayout 水平和垂直方向 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水平方向排列"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水平方向排列"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垂直方向排列"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垂直方向排列"/>
+    </LinearLayout>
+
+
+</LinearLayout>-->
+<!-- 03-2) layout_weight 权重; 用于分配占比 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff6b81"
+            android:text="1行水平方向排列1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#c0c0c0"
+            android:text="1行水平方向排列2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#90ee90"
+            android:text="2行水平方向排列1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff6b81"
+            android:text="2行水平方向排列2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ff6b81"
+            android:text="垂直方向排列1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#dda0dd"
+            android:text="垂直方向排列2" />
+    </LinearLayout>
+
+</LinearLayout>-->
+
+<!-- 04) RelativeLayout 相对布局 -->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="我的位置:水平中间"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="我的位置:垂直中间"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我的位置(水平+垂直)中间"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+-->
+
+<!-- 05 RelativeLayout 网格布局, 简单的田字-->
+<!--
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="2">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:background="#c0c0c0"
+        android:text="我的位置1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:background="#dda0dd"
+        android:text="我的位置2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:background="#90ee90"
+        android:text="我的位置3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:background="#00ffff"
+        android:text="我的位置4"
+        android:textSize="20sp" />
+</GridLayout>
+-->
+
+<!-- 06 ScrollView  滚动视图-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 水平方向滚动 -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0"
+                android:text="我的位置1,水平滚动"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#dda0dd"
+                android:text="我的位置2,需要水平滚动才可以看到"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- 垂直方向滚动-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#c0c0c0"
+                android:text="我的位置3,垂直方向滚动"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="#c0c0c0"
+                android:text="我的位置4,需要垂直方向滚动看到我所有内容"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

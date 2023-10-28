@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fei_watermelon">#FF6B81</color>
+    <color name="fei_color_aqua">#00FFFF</color>
 </resources>
