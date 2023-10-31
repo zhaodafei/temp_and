@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, FooActivity.class);
+                // intent.setClass(MainActivity.this, FooActivity.class);
+                intent.setClass(MainActivity.this, Fei00MenuActivity.class);
                 startActivity(intent); // 注意这个方法,不要选错了,这个方法有多个,参数不一样
             }
         });

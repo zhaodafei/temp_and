@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
 
+        <!-- 我的菜单入口文件-->
+        <activity android:name=".Fei00MenuActivity" />
+
         <!-- 我的第二个页面-->
         <activity android:name=".FooActivity" />
 
