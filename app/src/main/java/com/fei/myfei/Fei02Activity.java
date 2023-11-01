@@ -13,6 +13,7 @@ public class Fei02Activity extends AppCompatActivity implements View.OnClickList
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // 执行  finish(); 这里的 onCreate 不会再次执行
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fei02);
         Log.d(TAG, "onCreate: 内容 111111111");
