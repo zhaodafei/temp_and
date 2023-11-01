@@ -69,9 +69,9 @@ public class FooActivity extends AppCompatActivity  {
         fooText02.setLayoutParams(params); // 设置布局参数
 
         // // 05)接受其他页面跳转过来的参数
-        // Bundle extras = getIntent().getExtras();
-        // Object params1 = extras.getString("params_fei1");
-        // Object params2 = extras.getString("params_fei2");
+        // Bundle bundle = getIntent().getExtras();
+        // Object params1 = bundle.getString("params_fei1");
+        // Object params2 = bundle.getString("params_fei2");
         // TextView fooText03 = findViewById(R.id.foo_text03);
         // String allParams = String.format("参数1为%s: ", params1);
         // // fooText03.setText("ssssssssss");

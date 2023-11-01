@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fei02Activity">
+    tools:context=".Fei021Activity"
+    android:orientation="vertical">
 
   <TextView
-      android:id="@+id/feiMenu01_text"
+      android:id="@+id/fei021_text1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="我是空白页面"
+      android:text="过来的数据"
       android:textColor="#90EE90"
       android:textSize="20sp" />
 
@@ -19,5 +20,12 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="完成"/>
+
+  <!--  返回过去的数据 -->
+  <TextView
+      android:id="@+id/fei021_text2_response"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp" />
 
 </LinearLayout>

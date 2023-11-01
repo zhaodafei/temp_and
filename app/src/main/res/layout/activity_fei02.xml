@@ -4,12 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fei02Activity">
+    tools:context=".Fei02Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fei02_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是第一个内容带走"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/fei02_btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="下个页面"/>
+        android:gravity="center"
+        android:text="下个页面,传输请求数据"/>
+
+    <!--  接受到的数据 -->
+    <TextView
+        android:id="@+id/fei02_text2_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
 
 </LinearLayout>
