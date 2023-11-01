@@ -1,8 +1,10 @@
 package com.fei.myfei;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -12,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.fei.myfei.utils.UnitUtils;
 
-public class FooActivity extends AppCompatActivity {
+public class FooActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // 这个 onCreate 要选这个只有一个参数的
@@ -66,15 +68,33 @@ public class FooActivity extends AppCompatActivity {
         // params.width = UnitUtils.dip2px(this,300);
         fooText02.setLayoutParams(params); // 设置布局参数
 
-        // 05)去第demo1页面
-        Button FooButton3 = findViewById(R.id.foo_button3);
-        FooButton3.setOnClickListener(new View.OnClickListener(){
+        // // 05)接受其他页面跳转过来的参数
+        // Bundle extras = getIntent().getExtras();
+        // Object params1 = extras.getString("params_fei1");
+        // Object params2 = extras.getString("params_fei2");
+        // TextView fooText03 = findViewById(R.id.foo_text03);
+        // String allParams = String.format("参数1为%s: ", params1);
+        // // fooText03.setText("ssssssssss");
+        // fooText03.setText(allParams);
+
+
+        // 06)返回按钮开始
+        Button FooButton4 = findViewById(R.id.foo_button4);
+        FooButton4.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(FooActivity.this, Fei01Activity.class);
-                startActivity(intent);
+                Bundle bundle = new Bundle();
+                bundle.putString("response_01","我是返回上个activity参数1");
+                bundle.putString("response_02","我是返回上个activity参数2");
+                intent.putExtras(bundle);
+                // 携带信息返回上个页面,RESULT_OK表示处理成功
+                setResult(Activity.RESULT_OK, intent);
+                // 结束当前活动页面
+                finish();
             }
         });
+
+
     }
 }

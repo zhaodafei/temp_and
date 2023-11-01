@@ -47,10 +47,18 @@
         android:enabled="false"
         android:text="禁用按钮"/>
 
-    <Button
-        android:id="@+id/foo_button3"
+    <TextView
+        android:id="@+id/foo_text03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="去第demo1页面"/>
+        android:text="我接受其他页面传递过来的参数"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/foo_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回上个页面"/>
+
 
 </LinearLayout>
