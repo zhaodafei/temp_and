@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">大飞秘籍</string>
+    <string name="foo_text1">从首页跳转过来了</string>
+    <string name="foo_new_text1">通过java代码重新赋值的数据</string>
+
     <string name="feiMenu01_text">我是菜单页面</string>
     <string name="feiMenu00_home">返回首页</string>
     <string name="feiMenu00_foo">去foo页面</string>
     <string name="feiMenu00_bar">去bar页面</string>
     <string name="feiMenu01_link">第一个页面</string>
     <string name="feiMenu02_link">第二个页面,生命周期,数据传输</string>
+    <string name="feiMenu03_link">第三个页面,表单使用</string>
 
-    <string name="foo_text1">从首页跳转过来了</string>
-    <string name="foo_new_text1">通过java代码重新赋值的数据</string>
 </resources>

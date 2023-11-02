@@ -16,8 +16,6 @@ import android.widget.TextView;
 
 public class Fei00MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
-    // private ActivityResultLauncher<Intent> register;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,14 +48,6 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intent); // 注意这个方法,不要选错了,这个方法有多个,参数不一样
             }
         });
-        // // 从foo页面返回来拿到数据 ?????????????????/ todo: 从下个页面拿不到数据
-        // register = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-        //     @Override
-        //     public void onActivityResult(ActivityResult result) {
-        //         System.out.println("sssssssssss");
-        //         Log.d("fei1111111111", "onActivityResult: 收到数据了");
-        //     }
-        // });
 
         // 去bar页面
         Button MenuBtn00B = findViewById(R.id.feiMenu00_bar);
@@ -73,6 +63,7 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         // =====================  菜单页面 =============
         findViewById(R.id.feiMenu01_link).setOnClickListener(this); // 第1个页面
         findViewById(R.id.feiMenu02_link).setOnClickListener(this); // 第2个页面
+        findViewById(R.id.feiMenu03_link).setOnClickListener(this); // 第3个页面
     }
 
     @Override
@@ -87,6 +78,11 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Fei02Activity.class);
             startActivity(intent); // 注意这个方法,不要选错了,这个方法有多个,参数不一样
+        } else if (v.getId() == R.id.feiMenu03_link) {
+            // 去第3个页面
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei03Activity.class);
+            startActivity(intent);
         }
     }
 
