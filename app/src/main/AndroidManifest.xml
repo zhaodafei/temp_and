@@ -28,7 +28,8 @@
         <activity android:name=".Fei01Activity" /> <!-- <activity android:name=".Fei02Activity" android:exported="false" /> -->
         <activity android:name=".Fei02Activity" /> <!-- 菜单页面 -->
         <activity android:name=".Fei021Activity" /> <!-- 菜单页面 -->
-        <activity android:name=".Fei03Activity"  />
+        <activity android:name=".Fei03Activity" />
+        <activity android:name=".Fei031Activity" />
     </application>
 
 </manifest>
