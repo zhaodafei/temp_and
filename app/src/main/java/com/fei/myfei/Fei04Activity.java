@@ -100,7 +100,9 @@ public class Fei04Activity extends AppCompatActivity {
 
         // webView.loadUrl("http://www.baidu.com");
         // webView.loadUrl("https://developer.android.google.cn/docs?hl=zh-cn");
-        webView.loadUrl("https://support.github.com/features/rest-api");
+        // webView.loadUrl("https://support.github.com/features/rest-api");
+        // webView.loadUrl("https://developer.mozilla.org/zh-CN/docs/Web");
+        webView.loadUrl("https://www.runoob.com/w3cnote/android-tutorial-intro.html");
 
     }
 }
