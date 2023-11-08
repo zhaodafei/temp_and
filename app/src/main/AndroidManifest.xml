@@ -30,6 +30,7 @@
         <activity android:name=".Fei021Activity" /> <!-- 菜单页面 -->
         <activity android:name=".Fei03Activity" />
         <activity android:name=".Fei031Activity" />
+        <activity android:name=".Fei04Activity" />
     </application>
 
 </manifest>
