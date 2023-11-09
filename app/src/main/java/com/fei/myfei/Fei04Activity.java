@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
+import android.webkit.ConsoleMessage;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -44,7 +46,11 @@ public class Fei04Activity extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.my04_webView);
         WebSettings settings = webView.getSettings();
+        // 运行运行js
         settings.setJavaScriptEnabled(true);
+        // // 允许运行Dom缓存数据(比如js的: localStorage.setItem("key_fei","value_fei"))
+        settings.setDomStorageEnabled(true);
+
         //设置自适应屏幕，两者合用
         settings.setUseWideViewPort(true); // 将图片调整到适合webview的大小
         settings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小
@@ -98,11 +104,20 @@ public class Fei04Activity extends AppCompatActivity {
             }
         });
 
-        // webView.loadUrl("http://www.baidu.com");
+        webView.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                super.onConsoleMessage(consoleMessage);
+                Log.e(TAG , "执行__输出js中的console.log 的内容  " + consoleMessage.message());
+                return true;
+            }
+        });
+
+        webView.loadUrl("http://www.baidu.com");
         // webView.loadUrl("https://developer.android.google.cn/docs?hl=zh-cn");
         // webView.loadUrl("https://support.github.com/features/rest-api");
         // webView.loadUrl("https://developer.mozilla.org/zh-CN/docs/Web");
-        webView.loadUrl("https://www.runoob.com/w3cnote/android-tutorial-intro.html");
+        // webView.loadUrl("https://www.runoob.com/w3cnote/android-tutorial-intro.html");
 
     }
 }
