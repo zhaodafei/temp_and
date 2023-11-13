@@ -7,10 +7,14 @@
     <string name="feiMenu00_home">返回首页</string>
     <string name="feiMenu00_foo">去foo页面</string>
     <string name="feiMenu00_bar">去bar页面</string>
-    <string name="feiMenu01_link">第一个页面</string>
-    <string name="feiMenu02_link">第二个页面,生命周期,数据传输</string>
-    <string name="feiMenu03_link">第三个页面,表单使用</string>
-    <string name="feiMenu04_link">第四个页面,WebView使用</string>
+    <string name="feiMenu01_link">第1个页面</string>
+    <string name="feiMenu02_link">第2个页面,生命周期,数据传输</string>
+    <string name="feiMenu03_link">第3个页面,表单使用</string>
+    <string name="feiMenu04_link">第4个页面,WebView使用</string>
+    <string name="feiMenu05_link">第5个页面,SharedPreferences 数据共享</string>
+    <string name="feiMenu06_link">第6个页面,SQLite ???</string>
+
+    <string name="fei_com_hint">请输入</string>
 
     <string name="fei03_login_by_password">密码登录</string>
     <string name="fei03_login_by_verifyCode">验证码登录</string>
@@ -29,5 +33,6 @@
     <string name="fei03_input_verifyCode">请输入验证码：</string>
     <string name="fei03_get_verifyCode">获取验证码</string>
     <string name="fei03_done">确 &#160; &#160; &#160; &#160;认</string>
+
 
 </resources>

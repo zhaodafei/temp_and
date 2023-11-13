@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- 访问网络 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,8 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Temp_and"
-        tools:targetApi="31"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
 
         <activity
             android:name=".MainActivity"
@@ -35,8 +34,8 @@
         <activity android:name=".Fei03Activity" />
         <activity android:name=".Fei031Activity" />
         <activity android:name=".Fei04Activity" />
-
-
+        <activity android:name=".Fei05Activity" />
+        <activity android:name=".Fei06Activity" />
     </application>
 
 </manifest>

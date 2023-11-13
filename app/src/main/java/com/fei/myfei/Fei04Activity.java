@@ -15,7 +15,7 @@ import android.webkit.WebViewClient;
 
 public class Fei04Activity extends AppCompatActivity {
 
-    private final String TAG = "Fei04Activity_webView";
+    private static final String TAG = "Fei04Activity_webView";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

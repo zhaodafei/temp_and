@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class Fei02Activity extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String TAG = "Fei02Activity_tag"; // 日志标记
+    private static final String TAG = "Fei02Activity_tag"; // 日志标记
     private static final String mRequest = "我是第一个内容带走aaa";
     private ActivityResultLauncher<Intent> register;
 
