@@ -13,6 +13,7 @@
     <string name="feiMenu04_link">第4个页面,WebView使用</string>
     <string name="feiMenu05_link">第5个页面,SharedPreferences 数据共享</string>
     <string name="feiMenu06_link">第6个页面,SQLite ???</string>
+    <string name="feiMenu07_link">第7个页面,SQLite ???</string>
 
     <string name="fei_com_hint">请输入</string>
 

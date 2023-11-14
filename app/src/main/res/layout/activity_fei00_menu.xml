@@ -79,6 +79,12 @@
             android:layout_height="wrap_content"
             android:text="@string/feiMenu06_link" />
 
+        <Button
+            android:id="@+id/feiMenu07_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feiMenu07_link" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -67,6 +67,7 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.feiMenu04_link).setOnClickListener(this); // 第4个页面
         findViewById(R.id.feiMenu05_link).setOnClickListener(this); // 第5个页面
         findViewById(R.id.feiMenu06_link).setOnClickListener(this); // 第6个页面
+        findViewById(R.id.feiMenu07_link).setOnClickListener(this); // 第7个页面
     }
 
     @Override
@@ -98,6 +99,10 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         } else if (v.getId() == R.id.feiMenu06_link) {
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Fei06Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu07_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei07Activity.class);
             startActivity(intent);
         }
     }
