@@ -13,9 +13,9 @@
     <string name="feiMenu04_link">第4个页面,WebView使用</string>
     <string name="feiMenu05_link">第5个页面,SharedPreferences 数据共享</string>
     <string name="feiMenu06_link">第6个页面,SQLite ???</string>
-    <string name="feiMenu07_link">第7个页面, 全局变量</string>
-    <string name="feiMenu08_link">第8个页面, Jetpack Room</string>
-    <string name="feiMenu09_link">第9个页面, ???</string>
+    <string name="feiMenu07_link">第7个页面,全局变量</string>
+    <string name="feiMenu08_link">第8个页面,Jetpack Room</string>
+    <string name="feiMenu09_link">第9个页面,下拉列表 spinner </string>
     <string name="feiMenu10_link">第10个页面, ???</string>
     <string name="feiMenu11_link">第11个页面, ???</string>
     <string name="feiMenu12_link">第12个页面, ???</string>

@@ -41,7 +41,7 @@ public class Fei08Activity extends AppCompatActivity implements View.OnClickList
         bookInfoDao = MyApplication.getInstance().getBookInfoDatabase().bookInfoDao();
 
         lvData = (ListView) findViewById(R.id.fei08_lv_data);
-        //3、准备数据
+        //3、准备数据: waring: 这个ArrayAdapter 监听有点问题
         String[] data = {"葡萄", "苹果"};
         //4、创建适配器 连接数据源和控件的桥梁
         //参数 1：当前的上下文环境

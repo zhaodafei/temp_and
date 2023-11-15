@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/fei09_2_iv_icon01"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/food_apple"
+        tools:ignore="Suspicious0dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fei09_2_tv_title01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp"
+            android:gravity="start|center"
+            android:textSize="20sp"
+            android:textColor="#90ee90"
+            android:text="史记"/>
+
+        <TextView
+            android:id="@+id/fei09_2_tv_content01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp"
+            android:gravity="start|center"
+            android:textSize="10sp"
+            android:textColor="#90ee90"
+            android:text="《史记》，二十四史之一，最初称为《太史公书》或《太史公记》、《太史记》，
+            是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，
+            下至汉武帝太初四年间共3000多年的历史。"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

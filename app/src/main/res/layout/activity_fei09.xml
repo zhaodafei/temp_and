@@ -7,11 +7,60 @@
     tools:context=".Fei09Activity"
     android:orientation="vertical">
 
+    <!--  ==================== 下拉列表框Spinner ==========================  -->
     <TextView
-        android:id="@+id/fei07_tv01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="09" />
+        android:textSize="20sp"
+        android:text="下拉列表框Spinner" />
+
+    <Spinner
+        android:id="@+id/fei09_sp_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <!--  ==================== 弹窗 Spinner ==========================  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="弹窗 Spinner" />
+
+    <Spinner
+        android:id="@+id/fei09_sp_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog" />
+
+    <!--  ====================== 个性simpleAdapter开始 ========================  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="个性simpleAdapter开始" />
+
+    <Spinner
+        android:id="@+id/fei09_sp_simpleAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog" />
+
+    <!--  ====================== 再个性simpleAdapter开始 ========================  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="封装再个性simpleAdapter开始" />
+
+    <Spinner
+        android:id="@+id/fei09_sp_simpleAdapter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog" />
 
 </LinearLayout>
