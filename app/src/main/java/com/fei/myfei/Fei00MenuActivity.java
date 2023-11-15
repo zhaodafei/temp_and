@@ -69,6 +69,10 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.feiMenu06_link).setOnClickListener(this); // 第6个页面
         findViewById(R.id.feiMenu07_link).setOnClickListener(this); // 第7个页面
         findViewById(R.id.feiMenu08_link).setOnClickListener(this); // 第8个页面
+        findViewById(R.id.feiMenu09_link).setOnClickListener(this); // 第9个页面
+        findViewById(R.id.feiMenu10_link).setOnClickListener(this); // 第10个页面
+        findViewById(R.id.feiMenu11_link).setOnClickListener(this); // 第11个页面
+        findViewById(R.id.feiMenu12_link).setOnClickListener(this); // 第12个页面
     }
 
     @Override
@@ -109,8 +113,23 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Fei08Activity.class);
             startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu09_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei09Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu10_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei10Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu11_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei11Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu12_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei12Activity.class);
+            startActivity(intent);
         }
-
     }
 
 }
