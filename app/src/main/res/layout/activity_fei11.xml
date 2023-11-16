@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fei11Activity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Fei11Activity">
 
     <TextView
-        android:id="@+id/fei07_tv01"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="GridView 布局"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <GridView
+        android:id="@+id/fei11_gv01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="11" />
+        android:background="@color/fei_color_silver"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" />
 
 </LinearLayout>
