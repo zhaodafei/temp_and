@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  设置 ListView 行的颜色 -->
+    <!-- 选中颜色 -->
+    <item android:state_pressed="true" android:drawable="@color/fei_watermelon" />
+    <!-- 没有选中默认颜色 -->
+    <item  android:drawable="@color/white" />
+</selector>

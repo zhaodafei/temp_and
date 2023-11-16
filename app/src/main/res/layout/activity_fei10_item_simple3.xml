@@ -2,14 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fei10_3_ll_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    android:paddingTop="10dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+    <!--
+     android:descendantFocusability="blocksDescendants"
+     blocksDescendants 可以阻止下级控件获得焦点,避免堵塞列表视图的点击事件
+    -->
 
     <ImageView
-        android:id="@+id/fei09_2_iv_icon01"
+        android:id="@+id/fei10_3_iv_icon01"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_weight="1"
@@ -24,30 +29,37 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/fei09_2_tv_title01"
+            android:id="@+id/fei10_3_tv_title01"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            tools:ignore="Suspicious0dp"
             android:gravity="start|center"
-            android:textSize="20sp"
+            android:text="史记"
             android:textColor="#90ee90"
-            android:text="史记"/>
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
 
         <TextView
-            android:id="@+id/fei09_2_tv_content01"
+            android:id="@+id/fei10_3_tv_content01"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            tools:ignore="Suspicious0dp"
+            android:layout_weight="2"
             android:gravity="start|center"
-            android:textSize="10sp"
-            android:textColor="#90ee90"
             android:text="《史记》，二十四史之一，最初称为《太史公书》或《太史公记》、《太史记》，
             是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，
-            下至汉武帝太初四年间共3000多年的历史。"/>
+            下至汉武帝太初四年间共3000多年的历史。"
+            android:textColor="#90ee90"
+            android:textSize="10sp"
+            tools:ignore="Suspicious0dp" />
 
-</LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fei10_3_btn_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="点击我"/>
 
 
 </LinearLayout>

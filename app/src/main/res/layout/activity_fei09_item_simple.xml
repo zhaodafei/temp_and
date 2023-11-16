@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
+    <!--  simpleAdapter 下拉列表行项目样式 -->
     <ImageView
         android:id="@+id/fei09_iv_icon01"
         android:layout_width="0dp"

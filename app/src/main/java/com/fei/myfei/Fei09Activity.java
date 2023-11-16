@@ -69,6 +69,7 @@ public class Fei09Activity extends AppCompatActivity implements  AdapterView.OnI
             list.add(item);
         }
 
+        // 根据布局文件 res/layout/activity_fei09_item_simple.xml 生成转化视图对象
         // 声明一个下拉列表简单适配器,其中指定了图标与文本两组数据
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, list, R.layout.activity_fei09_item_simple,
                 new String[]{"icon", "name"},

@@ -4,14 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fei10Activity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Fei10Activity">
 
-    <TextView
-        android:id="@+id/fei07_tv01"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/fei10_ck_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="显示分割线"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/fei10_ck_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="显示按压背景"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <!-- divider, dividerHeight, listSelector 去掉点击时候的背景  -->
+    <ListView
+        android:id="@+id/fei10_lv01"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_marginTop="20dp"
-        android:text="10" />
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="#00000000" />
+
+    <!--  区分点击事件 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="下面区分点击事件"
+        android:textColor="#ff6b81"
+        android:background="@color/fei_color_silver"/>
+    <ListView
+        android:id="@+id/fei10_lv02"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
