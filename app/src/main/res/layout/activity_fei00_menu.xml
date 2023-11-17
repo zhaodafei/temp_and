@@ -112,6 +112,25 @@
             android:layout_height="wrap_content"
             android:text="@string/feiMenu12_link" />
 
+        <Button
+            android:id="@+id/feiMenu13_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feiMenu13_link" />
+
+        <Button
+            android:id="@+id/feiMenu14_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feiMenu14_link" />
+
+        <Button
+            android:id="@+id/feiMenu15_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feiMenu15_link" />
+
+
     </LinearLayout>
 
 </ScrollView>

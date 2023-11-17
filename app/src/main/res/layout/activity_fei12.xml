@@ -7,12 +7,51 @@
     android:orientation="vertical"
     tools:context=".Fei12Activity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/fei_watermelon"
+        android:gravity="center"
+        android:text="ViewPager效果演示"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fei12_vp_01"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/fei_color_silver"/>
+
+    <!--   PagerTitleStrip效果演示2    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/fei_watermelon"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ViewPager 的 标题 效果演示2"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/fei07_tv01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="12" />
+        android:gravity="center"
+        android:text="翻页标题栏 PagerTabStrip 效果"
+        android:textSize="15sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fei12_vp_02"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/fei_color_silver">
+
+        <androidx.viewpager.widget.PagerTabStrip
+            android:id="@+id/fei12_pts_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.viewpager.widget.ViewPager>
+
 
 </LinearLayout>
