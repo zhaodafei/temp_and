@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Fei15Activity">
+    tools:context=".Fei18Activity"
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/fei15_btn_send_standard"
+        android:id="@+id/fei18_btn_alarm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="发送标准广播" />
-
+        android:text="设置闹钟_广播" />
 </LinearLayout>
