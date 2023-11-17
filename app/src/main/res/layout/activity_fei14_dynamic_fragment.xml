@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+
+    <ImageView
+        android:id="@+id/fei14_dynamic_iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@color/fei_color_plum"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_icon_fei02" />
+
+    <TextView
+        android:id="@+id/fei14_dynamic_tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="描述飞"
+        android:background="@color/fei_color_gold"
+        android:textColor="@color/fei_watermelon"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

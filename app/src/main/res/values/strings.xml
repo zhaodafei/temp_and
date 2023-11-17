@@ -19,8 +19,8 @@
     <string name="feiMenu10_link">第10个页面,列表视图 ListView</string>
     <string name="feiMenu11_link">第11个页面,网格视图 GridView</string>
     <string name="feiMenu12_link">第12个页面,翻页视图ViewPager</string>
-    <string name="feiMenu13_link">第13个页面,Fragment</string>
-    <string name="feiMenu14_link">第14个页面,???</string>
+    <string name="feiMenu13_link">第13个页面,静态staticFragment</string>
+    <string name="feiMenu14_link">第14个页面,动态dynamic Fragment</string>
     <string name="feiMenu15_link">第15个页面,???</string>
 
     <string name="fei_com_hint">请输入</string>

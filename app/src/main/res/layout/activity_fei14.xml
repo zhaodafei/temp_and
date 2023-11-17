@@ -9,9 +9,25 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="动态dynamic Fragment"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fei14_vp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center|center_vertical"
-        android:text="14" />
+        android:background="@color/fei_color_silver">
+
+        <androidx.viewpager.widget.PagerTabStrip
+            android:id="@+id/fei14_pts_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.viewpager.widget.ViewPager>
 
 
 </LinearLayout>
