@@ -7,150 +7,173 @@
     android:orientation="vertical"
     tools:context=".Fei00MenuActivity">
 
-<!-- 垂直方向滚动-->
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/feiMenu00_home"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/feiMenu00_home" />
 
         <Button
             android:id="@+id/feiMenu00_foo"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/feiMenu00_foo" />
+
         <Button
             android:id="@+id/feiMenu00_bar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/feiMenu00_bar" />
-
-        <TextView
-            android:id="@+id/feiMenu01_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu01_text"
-            android:textColor="#90EE90"
-            android:textSize="20sp" />
-
-        <!--  ===========================下面是菜单页面================== -->
-        <Button
-            android:id="@+id/feiMenu01_link"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/feiMenu01_link" />
-
-        <Button
-            android:id="@+id/feiMenu02_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu02_link" />
-
-        <Button
-            android:id="@+id/feiMenu03_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu03_link" />
-
-        <Button
-            android:id="@+id/feiMenu04_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu04_link" />
-
-        <Button
-            android:id="@+id/feiMenu05_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu05_link" />
-
-        <Button
-            android:id="@+id/feiMenu06_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu06_link" />
-
-        <Button
-            android:id="@+id/feiMenu07_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu07_link" />
-
-        <Button
-            android:id="@+id/feiMenu08_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu08_link" />
-
-        <Button
-            android:id="@+id/feiMenu09_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu09_link" />
-        <Button
-            android:id="@+id/feiMenu10_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu10_link" />
-        <Button
-            android:id="@+id/feiMenu11_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu11_link" />
-        <Button
-            android:id="@+id/feiMenu12_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu12_link" />
-
-        <Button
-            android:id="@+id/feiMenu13_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu13_link" />
-
-        <Button
-            android:id="@+id/feiMenu14_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu14_link" />
-
-        <Button
-            android:id="@+id/feiMenu15_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu15_link" />
-
-        <Button
-            android:id="@+id/feiMenu16_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu16_link" />
-
-        <Button
-            android:id="@+id/feiMenu17_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu17_link" />
-
-        <Button
-            android:id="@+id/feiMenu18_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feiMenu18_link" />
-
-
     </LinearLayout>
 
-</ScrollView>
+    <!-- ================== 垂直方向滚动 ===============-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feiMenu01_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu01_text"
+                android:textColor="#90EE90"
+                android:textSize="20sp" />
+
+            <!--  ===========================下面是菜单页面================== -->
+            <Button
+                android:id="@+id/feiMenu01_link"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/feiMenu01_link" />
+
+            <Button
+                android:id="@+id/feiMenu02_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu02_link" />
+
+            <Button
+                android:id="@+id/feiMenu03_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu03_link" />
+
+            <Button
+                android:id="@+id/feiMenu04_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu04_link" />
+
+            <Button
+                android:id="@+id/feiMenu05_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu05_link" />
+
+            <Button
+                android:id="@+id/feiMenu06_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu06_link" />
+
+            <Button
+                android:id="@+id/feiMenu07_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu07_link" />
+
+            <Button
+                android:id="@+id/feiMenu08_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu08_link" />
+
+            <Button
+                android:id="@+id/feiMenu09_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu09_link" />
+
+            <Button
+                android:id="@+id/feiMenu10_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu10_link" />
+
+            <Button
+                android:id="@+id/feiMenu11_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu11_link" />
+
+            <Button
+                android:id="@+id/feiMenu12_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu12_link" />
+
+            <Button
+                android:id="@+id/feiMenu13_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu13_link" />
+
+            <Button
+                android:id="@+id/feiMenu14_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu14_link" />
+
+            <Button
+                android:id="@+id/feiMenu15_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu15_link" />
+
+            <Button
+                android:id="@+id/feiMenu16_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu16_link" />
+
+            <Button
+                android:id="@+id/feiMenu17_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu17_link" />
+
+            <Button
+                android:id="@+id/feiMenu18_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu18_link" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="到底了,没有其他内容了"
+                android:textColor="#90EE90"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
