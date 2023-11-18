@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fei032Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="日期和时间选择框" />
+
+    <!--  ================= 日期选择=====================  -->
+    <DatePicker
+        android:id="@+id/fei032_dp_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/fei032_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日期_确定" />
+
+    <TextView
+        android:id="@+id/fei032_tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="您选择的日期是: " />
+
+    <!--  ================= dialog 日期对话框,通过java代码来实现 =====================  -->
+    <Button
+        android:id="@+id/fei032_btn_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击我弹出日期选择框"
+        android:textColor="@color/fei_watermelon"/>
+    <TextView
+        android:id="@+id/fei032_tv_date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="您选择的日期是: " />
+
+    <!--  ++++++++++++++++================= 时间选择 =====================++++++++++++  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="================下面是时间选择框==============" />
+
+    <TimePicker
+        android:id="@+id/fei032_tp_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/fei032_btn_ok_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时间_确定" />
+
+    <TextView
+        android:id="@+id/fei032_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="您选择的时间是: " />
+
+    <!--  ================= dialog 日期对话框,通过java代码来实现 =====================  -->
+    <Button
+        android:id="@+id/fei032_btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击我弹出时间选择框"
+        android:textColor="@color/fei_watermelon" />
+
+    <TextView
+        android:id="@+id/fei032_tv_time2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="您选择的时间是: " />
+
+</LinearLayout>

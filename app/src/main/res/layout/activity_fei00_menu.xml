@@ -72,6 +72,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/feiMenu03_link" />
+            <Button
+                android:id="@+id/feiMenu03_1_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu03_1_link" />
+            <Button
+                android:id="@+id/feiMenu03_2_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu03_2_link" />
+            <Button
+                android:id="@+id/feiMenu03_3_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu03_3_link" />
 
             <Button
                 android:id="@+id/feiMenu04_link"
