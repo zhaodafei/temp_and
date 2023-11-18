@@ -26,6 +26,9 @@
     <string name="feiMenu17_link">第17个页面,系统分钟到达广播 和 网路变更广播 </string>
     <string name="feiMenu18_link">第18个页面,定时管理器 AlarmManager </string>
 
+    <string name="feiMenu19_link">demo01, 常用导航布局</string>
+    <string name="feiMenu20_link">demo02, ....</string>
+
     <string name="fei_com_hint">请输入</string>
 
     <string name="fei03_login_by_password">密码登录</string>

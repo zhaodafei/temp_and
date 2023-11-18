@@ -1,18 +1,14 @@
 package com.fei.myfei;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
+import com.fei.myfei.activity.Demo01Activity;
+import com.fei.myfei.activity.Demo02Activity;
 
 public class Fei00MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -79,6 +75,9 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.feiMenu16_link).setOnClickListener(this); // 第16个页面
         findViewById(R.id.feiMenu17_link).setOnClickListener(this); // 第17个页面
         findViewById(R.id.feiMenu18_link).setOnClickListener(this); // 第18个页面
+
+        findViewById(R.id.feiMenu19_link).setOnClickListener(this); // demo:页面开始
+        findViewById(R.id.feiMenu20_link).setOnClickListener(this);
     }
 
     @Override
@@ -159,7 +158,18 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Fei18Activity.class);
             startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu19_link) {
+            // 常见demo: 开始 =======================================================
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo01Activity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.feiMenu20_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo02Activity.class);
+            startActivity(intent);
         }
+
+
     }
 
 }

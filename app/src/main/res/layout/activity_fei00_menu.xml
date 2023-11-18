@@ -167,9 +167,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="到底了,没有其他内容了"
+                android:text="到底了,基本功能结束"
                 android:textColor="#90EE90"
                 android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/feiMenu19_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu19_link" />
+
+            <Button
+                android:id="@+id/feiMenu20_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu20_link" />
 
 
         </LinearLayout>

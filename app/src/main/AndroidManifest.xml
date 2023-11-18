@@ -50,6 +50,9 @@
         <activity android:name=".Fei16Activity" />
         <activity android:name=".Fei17Activity" />
         <activity android:name=".Fei18Activity" />
+
+        <activity android:name=".activity.Demo01Activity" /> <!--  demo:页面开始 -->
+        <activity android:name=".activity.Demo02Activity" />
     </application>
 
 </manifest>
