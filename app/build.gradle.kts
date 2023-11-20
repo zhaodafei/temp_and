@@ -44,4 +44,14 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.1")
     annotationProcessor("androidx.room:room-compiler:2.5.1")
 
+    // 地区三级联动: 需要在 settings.gradle.kts 中配置 maven("https://jitpack.io")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:Common:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:WheelView:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:WheelPicker:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:AddressPicker:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:ColorPicker:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:FilePicker:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:CalendarPicker:4.1.12")
+    implementation("com.github.gzu-liyujiang.AndroidPicker:ImagePicker:4.1.12")
+
 }

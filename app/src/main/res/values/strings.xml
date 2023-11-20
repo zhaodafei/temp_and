@@ -34,7 +34,9 @@
     <string name="feiMenu19_3_link">第19_3个页面,服务 IntentService </string>
 
     <string name="demo01_link">demo01, 常用导航布局</string>
-    <string name="demo02_link">demo02, ....</string>
+    <string name="demo02_link">demo02, 三级联动</string>
+    <string name="demo03_link">demo03, ????</string>
+    <string name="demo04_link">demo04, ????</string>
 
     <string name="fei_com_hint">请输入</string>
 

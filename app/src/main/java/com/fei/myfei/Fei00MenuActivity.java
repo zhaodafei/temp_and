@@ -9,6 +9,8 @@ import android.widget.Button;
 
 import com.fei.myfei.activity.Demo01Activity;
 import com.fei.myfei.activity.Demo02Activity;
+import com.fei.myfei.activity.Demo03Activity;
+import com.fei.myfei.activity.Demo04Activity;
 
 public class Fei00MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -85,6 +87,8 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
 
         findViewById(R.id.demo01_link).setOnClickListener(this); // demo:页面开始
         findViewById(R.id.demo02_link).setOnClickListener(this);
+        findViewById(R.id.demo03_link).setOnClickListener(this);
+        findViewById(R.id.demo04_link).setOnClickListener(this);
     }
 
     @Override
@@ -192,14 +196,22 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Fei19_3Activity.class);
             startActivity(intent);
-        }  else if (v.getId() == R.id.demo01_link) {
+        } else if (v.getId() == R.id.demo01_link) {
             // 常见demo: 开始 =======================================================
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Demo01Activity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.demo02_link) {
+        } else if (v.getId() == R.id.demo02_link) {
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Demo02Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.demo03_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo03Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.demo04_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo04Activity.class);
             startActivity(intent);
         }
 

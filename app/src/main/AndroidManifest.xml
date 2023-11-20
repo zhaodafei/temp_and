@@ -58,6 +58,8 @@
 
         <activity android:name=".activity.Demo01Activity" /> <!-- demo:页面开始 -->
         <activity android:name=".activity.Demo02Activity" />
+        <activity android:name=".activity.Demo03Activity" />
+        <activity android:name=".activity.Demo04Activity" />
 
         <!-- 服务声明,这样就可以在代码中调用到 -->
         <service

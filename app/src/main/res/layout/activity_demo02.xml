@@ -11,7 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:gravity="center"
-        android:text="这里是demo02"
+        android:text="这里是demo02,地区三级联动"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/demo02_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onProvinceCityCounty"
+        android:text="点击选择地区" />
+
+    <TextView
+        android:id="@+id/demo02_tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="您选择的地区是:"
         android:textSize="17sp" />
 
 
