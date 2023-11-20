@@ -29,9 +29,12 @@
     <string name="feiMenu16_link">第16个页面,有序广播Broadcast </string>
     <string name="feiMenu17_link">第17个页面,系统分钟到达广播 和 网路变更广播 </string>
     <string name="feiMenu18_link">第18个页面,定时管理器 AlarmManager </string>
+    <string name="feiMenu19_link">第19个页面,一般服务 service </string>
+    <string name="feiMenu19_2_link">第19_2个页面,绑定本地服务 service </string>
+    <string name="feiMenu19_3_link">第19_3个页面,服务 IntentService </string>
 
-    <string name="feiMenu19_link">demo01, 常用导航布局</string>
-    <string name="feiMenu20_link">demo02, ....</string>
+    <string name="demo01_link">demo01, 常用导航布局</string>
+    <string name="demo02_link">demo02, ....</string>
 
     <string name="fei_com_hint">请输入</string>
 

@@ -62,7 +62,7 @@ public class Fei032Activity extends AppCompatActivity implements View.OnClickLis
             int monday = calendar.get(Calendar.MONDAY);
             int dayOfMonday = calendar.get(Calendar.DAY_OF_MONTH);
 
-            // 第二个参数使用监听 onDateSet,
+            // 第二个参数使用监听 onDateSet, 或者直接在第二个参数地方 new DatePickerDialog.OnDateSetListener(){}
             // DatePickerDialog dialog = new DatePickerDialog(this, this, 2090, 5, 11);
             DatePickerDialog dialog = new DatePickerDialog(this, this, year, monday, dayOfMonday);
             dialog.show(); // 显示日期对话框

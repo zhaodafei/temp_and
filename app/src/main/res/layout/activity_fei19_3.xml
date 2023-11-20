@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fei19_3Activity">
+
+    <Button
+        android:id="@+id/fei19_3_btn_normal_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一般服务Service" />
+
+    <Button
+        android:id="@+id/fei19_3_btn_intent_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="子类Intent服务 Intent Service" />
+
+</LinearLayout>

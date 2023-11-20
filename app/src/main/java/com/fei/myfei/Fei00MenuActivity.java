@@ -79,9 +79,12 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.feiMenu16_link).setOnClickListener(this); // 第16个页面
         findViewById(R.id.feiMenu17_link).setOnClickListener(this); // 第17个页面
         findViewById(R.id.feiMenu18_link).setOnClickListener(this); // 第18个页面
+        findViewById(R.id.feiMenu19_link).setOnClickListener(this); // 第19个页面
+        findViewById(R.id.feiMenu19_2_link).setOnClickListener(this); // 第19-2个页面
+        findViewById(R.id.feiMenu19_3_link).setOnClickListener(this); // 第19-3个页面
 
-        findViewById(R.id.feiMenu19_link).setOnClickListener(this); // demo:页面开始
-        findViewById(R.id.feiMenu20_link).setOnClickListener(this);
+        findViewById(R.id.demo01_link).setOnClickListener(this); // demo:页面开始
+        findViewById(R.id.demo02_link).setOnClickListener(this);
     }
 
     @Override
@@ -178,11 +181,23 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
             intent.setClass(Fei00MenuActivity.this, Fei18Activity.class);
             startActivity(intent);
         } else if (v.getId() == R.id.feiMenu19_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei19Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.feiMenu19_2_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei19_2Activity.class);
+            startActivity(intent);
+        }  else if (v.getId() == R.id.feiMenu19_3_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Fei19_3Activity.class);
+            startActivity(intent);
+        }  else if (v.getId() == R.id.demo01_link) {
             // 常见demo: 开始 =======================================================
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Demo01Activity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.feiMenu20_link) {
+        }else if (v.getId() == R.id.demo02_link) {
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Demo02Activity.class);
             startActivity(intent);

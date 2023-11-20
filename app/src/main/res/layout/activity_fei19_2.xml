@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fei19_2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="不要忘记在 AndroidManifest.xml 声明服务"
+        android:textColor="@color/fei_watermelon"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/fei19_2_bind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定的服务" />
+
+    <Button
+        android:id="@+id/fei19_2_unbind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解绑服务" />
+
+    <Button
+        android:id="@+id/fei19_2_get_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取服务状态" />
+
+</LinearLayout>

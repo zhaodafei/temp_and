@@ -178,6 +178,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/feiMenu18_link" />
 
+            <Button
+                android:id="@+id/feiMenu19_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu19_link" />
+
+            <Button
+                android:id="@+id/feiMenu19_2_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu19_2_link" />
+
+            <Button
+                android:id="@+id/feiMenu19_3_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feiMenu19_3_link" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -187,16 +205,16 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/feiMenu19_link"
+                android:id="@+id/demo01_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/feiMenu19_link" />
+                android:text="@string/demo01_link" />
 
             <Button
-                android:id="@+id/feiMenu20_link"
+                android:id="@+id/demo02_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/feiMenu20_link" />
+                android:text="@string/demo02_link" />
 
 
         </LinearLayout>

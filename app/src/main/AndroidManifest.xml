@@ -16,9 +16,7 @@
         android:theme="@style/Theme.Temp_and"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".Fei033Activity"
-            android:exported="false" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="true">
@@ -38,6 +36,7 @@
         <activity android:name=".Fei03Activity" />
         <activity android:name=".Fei031Activity" />
         <activity android:name=".Fei032Activity" />
+        <activity android:name=".Fei033Activity" />
         <activity android:name=".Fei04Activity" />
         <activity android:name=".Fei05Activity" />
         <activity android:name=".Fei06Activity" />
@@ -53,8 +52,30 @@
         <activity android:name=".Fei16Activity" />
         <activity android:name=".Fei17Activity" />
         <activity android:name=".Fei18Activity" />
+        <activity android:name=".Fei19Activity" />
+        <activity android:name=".Fei19_2Activity" />
+        <activity android:name=".Fei19_3Activity" />
+
         <activity android:name=".activity.Demo01Activity" /> <!-- demo:页面开始 -->
         <activity android:name=".activity.Demo02Activity" />
+
+        <!-- 服务声明,这样就可以在代码中调用到 -->
+        <service
+            android:name=".service.Fei19Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.Fei19_2BindService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.Fei19_3NormalService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.Fei19_3MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
