@@ -113,11 +113,15 @@ public class Fei04Activity extends AppCompatActivity {
             }
         });
 
+        // 嵌入一个在线网页
         webView.loadUrl("http://www.baidu.com");
         // webView.loadUrl("https://developer.android.google.cn/docs?hl=zh-cn");
         // webView.loadUrl("https://support.github.com/features/rest-api");
         // webView.loadUrl("https://developer.mozilla.org/zh-CN/docs/Web");
         // webView.loadUrl("https://www.runoob.com/w3cnote/android-tutorial-intro.html");
+
+        // 嵌入一个本地的页面
+        // webView.loadUrl("file:///android_asset/fei_index.html");
 
     }
 }

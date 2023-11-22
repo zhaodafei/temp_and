@@ -9,11 +9,37 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
+        android:background="#c0c0c0"
         android:gravity="center"
-        android:text="这里是demo03,???"
-        android:textSize="17sp" />
+        android:text="我是demo03首页"
+        android:textSize="25sp" />
 
+    <!--  ========== WebView 模块 ==========  -->
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="430dp"
+        android:background="#ff6b81">
+
+        <WebView
+            android:id="@+id/demo03_webView"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ff6b81"
+        android:gravity="center"
+        android:text="我是demo03底部"
+        android:textSize="30sp" />
 
 
 </LinearLayout>

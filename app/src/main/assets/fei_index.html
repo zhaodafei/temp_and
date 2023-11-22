@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我是html和安卓交互</title>
+</head>
+<body>
+
+<div style="color:red;font-size:50px">
+  我是WebView嵌入进来的页面
+</div>
+
+<div style="margin-top: 10px">
+  <button type="button" onclick="btnAnd()"> 调用安卓中代码(无参数)</button>
+</div>
+
+<div style="margin-top: 10px">
+  <button type="button" onclick="btnAndArgs()"> 调用安卓中代码(有参数1)</button>
+</div>
+
+<script>
+  // 暴露出去,留个安卓调用==========================================
+  function callJsFunction(receiveAndData) {
+    console.log('HTML我执行了,接受到安卓传递过来的数据了', receiveAndData);
+
+    return "我执行成功了,在安卓中看到了吗?"
+  }
+  // window.callJsFunction = callJsFunction
+
+
+  // 调用安卓中方法==========================================
+  function btnAnd() {
+    window.androidFei.saveFei(); // 调用安卓中方法
+  }
+
+  function btnAndArgs() {
+    let params = {name: '我的名字是大飞vue', age: "年龄18"} // 解析: JSON.parse()
+    console.log(JSON.stringify(params));
+    window.androidFei.saveFeiArgs(JSON.stringify(params)); // 调用安卓中方法
+  }
+</script>
+
+
+</body>
+</html>
