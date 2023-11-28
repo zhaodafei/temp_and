@@ -125,7 +125,12 @@ public class Demo03Activity extends AppCompatActivity  {
         });
 
         // 嵌入一个本地的页面 app/src/main/assets/fei_index.html
-        webView.loadUrl("file:///android_asset/fei_index.html");
+        String url = "file:///android_asset/fei_index.html"; // ok 安卓自己的一个静态文件
+        // String url = "http://192.168.20.122"; // ok 自己电脑的ip,用nginx启动的一个服务
+        // String url = "http://192.168.20.122:4100/#/home"; // ok, 用自己电脑启动的一个vue
+        // String url = "https://www.baidu.com"; // 百度数据(一会儿可以一会不行; 不知道为啥)
+        // String url = "https://cn.bing.com"; // OK 必应好的
+        webView.loadUrl(url);
     }
 
     // HTML中js调用,无参数
