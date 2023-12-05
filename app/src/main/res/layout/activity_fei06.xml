@@ -33,14 +33,57 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/fei06_tv_db"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="这是内容"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上面的内容和下面没有关系, 上面是一个手动创建数据库功能"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/fei_watermelon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="================================="
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/fei_watermelon"/>
+    </LinearLayout>
+
+
+    <!--  ========================================================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fei06_et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="请输入"
+            android:inputType="text"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/fei_color_silver" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,22 +91,130 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="年龄"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fei06_et_age"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="请输入"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/fei_color_silver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="身高"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fei06_et_height"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="请输入"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/fei_color_silver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="体重"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fei06_et_weight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="请输入"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/fei_color_silver" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/fei06_ck_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否同意协议"
+        android:textSize="17sp"/>
+    <!--  ========================================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/fei06_btn_insertOne"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="插入一条数据"
             android:textSize="17sp" />
 
         <Button
-            android:id="@+id/fei06_btn_select"
-            android:layout_width="0dp"
+            android:id="@+id/fei06_btn_delete"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="读取插入的数据"
+            android:text="删除"
             android:textSize="17sp" />
 
+        <Button
+            android:id="@+id/fei06_btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/fei06_btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="读取插入的数据"
+            android:textSize="17sp" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/fei06_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
 
 </LinearLayout>
