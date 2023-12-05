@@ -35,10 +35,11 @@
             android:layout_weight="1"
             android:button="@null"
             android:checked="true"
-            android:drawableTop="@drawable/food_apple"
+            android:drawableTop="@drawable/demo01_radio_icon"
             android:gravity="center_horizontal|bottom"
             android:paddingTop="2dp"
-            android:text="首页" />
+            android:text="首页"
+            android:textColor="@drawable/demo01_radio_color" />
 
         <RadioButton
             android:id="@+id/d01_my_page"
@@ -47,10 +48,11 @@
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/food_apple"
+            android:drawableTop="@drawable/demo01_radio_icon"
             android:gravity="center_horizontal|bottom"
             android:paddingTop="2dp"
-            android:text="我的" />
+            android:text="我的"
+            android:textColor="@drawable/demo01_radio_color" />
 
     </RadioGroup>
 
