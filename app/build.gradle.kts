@@ -54,4 +54,13 @@ dependencies {
     implementation("com.github.gzu-liyujiang.AndroidPicker:CalendarPicker:4.1.12")
     implementation("com.github.gzu-liyujiang.AndroidPicker:ImagePicker:4.1.12")
 
+    // fastjson json解析
+    // implementation("com.alibaba:fastjson:2.0.28")
+    // 网路请求库 okhttp 网络框架
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    // 网路请求库  retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.6.1")
+    implementation("com.squareup.retrofit2:converter-gson:2.6.1")
+
+
 }

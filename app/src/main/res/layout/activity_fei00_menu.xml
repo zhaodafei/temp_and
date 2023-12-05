@@ -228,6 +228,18 @@
                 android:layout_height="wrap_content"
                 android:text="@string/demo04_link" />
 
+            <Button
+                android:id="@+id/demo05_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demo05_link" />
+
+            <Button
+                android:id="@+id/demo06_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demo06_link" />
+
 
 
         </LinearLayout>

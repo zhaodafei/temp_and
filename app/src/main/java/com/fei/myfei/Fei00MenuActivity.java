@@ -11,6 +11,8 @@ import com.fei.myfei.activity.Demo01Activity;
 import com.fei.myfei.activity.Demo02Activity;
 import com.fei.myfei.activity.Demo03Activity;
 import com.fei.myfei.activity.Demo04Activity;
+import com.fei.myfei.activity.Demo05Activity;
+import com.fei.myfei.activity.Demo06Activity;
 
 public class Fei00MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -89,6 +91,8 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         findViewById(R.id.demo02_link).setOnClickListener(this);
         findViewById(R.id.demo03_link).setOnClickListener(this);
         findViewById(R.id.demo04_link).setOnClickListener(this);
+        findViewById(R.id.demo05_link).setOnClickListener(this);
+        findViewById(R.id.demo06_link).setOnClickListener(this);
     }
 
     @Override
@@ -212,6 +216,14 @@ public class Fei00MenuActivity extends AppCompatActivity implements View.OnClick
         } else if (v.getId() == R.id.demo04_link) {
             Intent intent = new Intent();
             intent.setClass(Fei00MenuActivity.this, Demo04Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.demo05_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo05Activity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.demo06_link) {
+            Intent intent = new Intent();
+            intent.setClass(Fei00MenuActivity.this, Demo06Activity.class);
             startActivity(intent);
         }
 

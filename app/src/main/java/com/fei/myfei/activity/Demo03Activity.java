@@ -130,6 +130,9 @@ public class Demo03Activity extends AppCompatActivity  {
         // String url = "http://192.168.20.122:4100/#/home"; // ok, 用自己电脑启动的一个vue
         // String url = "https://www.baidu.com"; // 百度数据(一会儿可以一会不行; 不知道为啥)
         // String url = "https://cn.bing.com"; // OK 必应好的
+
+        // String url = "http://192.168.20.60"; // OK 自己电脑的ip,用nginx启动的一个服务
+        // String url = "http://192.168.20.60:84/api/foo/da"; // OK 本地电脑一个nginx启动的服务端接口
         webView.loadUrl(url);
     }
 

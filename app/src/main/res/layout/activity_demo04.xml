@@ -9,11 +9,50 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:text="这里是demo04,???"
+        android:text="这里是demo04,网路请求"
         android:textSize="17sp" />
 
+    <TextView
+        android:id="@+id/demo04_tv_setData"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="网络请求成功后,我会赋值"
+        android:textColor="@color/fei_watermelon"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/demo04_tv_setJsonData"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="网络请求成功后,我会赋值JSON数据"
+        android:textColor="@color/fei_color_lightGreen"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/demo04_btn_get1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET点击调用接口-OkHttpClient" />
+
+    <Button
+        android:id="@+id/demo04_btn_get2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET点击调用接口-Retrofit-本机api" />
+
+    <Button
+        android:id="@+id/demo04_btn_get3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET点击调用接口-Retrofit-在线api" />
 
 
 </LinearLayout>
