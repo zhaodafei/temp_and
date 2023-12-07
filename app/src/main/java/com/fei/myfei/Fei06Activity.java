@@ -141,7 +141,8 @@ public class Fei06Activity extends AppCompatActivity implements View.OnClickList
             List<UserFei> list = mHelper.queryByName(name);
 
             String[] dataFei;
-            int arrLen = 2;
+            // int arrLen = 2;
+            int arrLen = list.size(); // 有多少查询多少
             dataFei = new String[arrLen];
             int i = 0;
             for (UserFei u : list) {

@@ -132,8 +132,13 @@ public class UserDBHelper extends SQLiteOpenHelper {
         List<UserFei> list = new ArrayList<>();
         // 执行记录查询动作，该语句返回结果集的游标
         Cursor cursor = myRDB.query(TABLE_NAME, null, "name=?", new String[]{name}, null, null, null);
+
+        // 查询所有数据
+        // Cursor cursor = myRDB.query(TABLE_NAME, null, null, null, null, null, null);
+
         // 循环取出游标指向的每条记录
         while (cursor.moveToNext()) {
+            // String name = cursor.getString(cursor.getColumnIndex(TABLE_NAME.name));
             UserFei user = new UserFei();
             user.id = cursor.getInt(0);
             user.name = cursor.getString(1);
